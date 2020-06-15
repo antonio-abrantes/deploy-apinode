@@ -22,6 +22,6 @@ const Product = mongoose.model('Product');
 
 app.use('/api', require('./src/routes'));
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
   // console.log('Server on port:3333');
 });
